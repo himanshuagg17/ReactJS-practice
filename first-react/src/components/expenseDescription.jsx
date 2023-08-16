@@ -1,5 +1,5 @@
 import "./expenseDescription.css"
-
+import React from "react";
 function ExpenseDescription(props){
      return(
         <div className="expenseDesc">

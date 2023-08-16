@@ -1,4 +1,5 @@
 import ExpenseItem from "./components/expenseItem";
+import React from "react";
 import ExpenseDescription from "./components/expenseDescription";
 function App() {
   // creating the variables and passing it to the component

@@ -1,6 +1,7 @@
 import ReactDOM from 'react-dom';
 import "./index.css";
 import App from "./App"
+import React from 'react';
 
 // taking the root from the index.html
 const rootElement = document.getElementById('root');
