@@ -1,14 +1,11 @@
 import "./expenseItem.css";
 
-function ExpenseItem(){
-  
-
+function ExpenseItem(props){
      return(
         <div className="expenseItem">
-          <div>Date: 11 August 2023</div>
           <div>
-            <h3>Home loan</h3>
-            <p>$300</p>
+            <h3>{props.title}</h3>
+            <p>{props.amount}</p>
           </div>
         </div>
      )
