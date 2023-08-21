@@ -1,6 +1,7 @@
 import ExpenseItem from "./components/expenseItem";
 import React from "react";
 import ExpenseDescription from "./components/expenseDescription";
+import ProductForm from "./components/ExpenseForm";
 function App() {
   // creating the variables and passing it to the component
   let expenseDetails = [
@@ -25,6 +26,17 @@ function App() {
     },
   ];
 
+
+  
+  const expenseDataHandler=(x)=>{
+        const obj={
+          ...x,
+          id: Math.random().toString()
+        }
+        console.log(obj);
+  }
+
+
   // passing the variables to the component.
   return (
     <div>
@@ -41,6 +53,10 @@ function App() {
       <ExpenseDescription description={expenseDesc[0].desc} />
 
       <ExpenseDescription description={expenseDesc[1].desc} />
+
+     
+
+      <ProductForm onExpenseDataHandler={expenseDataHandler}/>
     </div>
   );
 }

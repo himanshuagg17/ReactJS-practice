@@ -1,0 +1,1 @@
+to pass the data from a form to the window, we need to create an object in the form and pass the data to the parent , then in the parent we will create a function and we will create an object and add the details that we need. Then the data will be printed as it is passed .
